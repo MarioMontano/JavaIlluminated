@@ -1,0 +1,70 @@
+/**
+ * Client class to test all the methods in Weather.
+ *
+ * Mario Montano
+ * 
+ */
+public class WeatherClient
+{
+  public static void main(String [ ] args)
+  {
+      System.out.println("Instantiate today");
+      Weather today = new Weather( );
+      
+      System.out.println("\nInstantiate tomorrow");
+      Weather tomorrow = new Weather("sunny", 70);
+      
+      System.out.println("\nInstantiate yesterday");
+      Weather yesterday = new Weather("snowy", -50);
+  }
+  {
+      Weather today = new Weather( );
+      String todaySkyConditions = today.getSkyConditions( );
+      int todayTemperature = today.getTemperature( );
+      System.out.println("today: sky conditions are " + todaySkyConditions
+                 + "\n temperature is " + todayTemperature);
+                 
+      Weather tomorrow = new Weather("cloudy", 50);
+      String tomorrowSkyConditions = tomorrow.getSkyConditions( );
+      int tomorrowTemperature = tomorrow.getTemperature( );
+      System.out.println("tomorrow: sky conditions are " + tomorrowSkyConditions
+                 + "\n temperature is " + tomorrowTemperature);
+  }
+  {
+      Weather today = new Weather("snowy", 31);
+      
+      System.out.println("today: sky conditions are " + today.getSkyConditions( )
+             + "\n temperature is " + today.getTemperature( ));
+             
+      today.setSkyConditions("cloudy");
+      today.setTemperature(80);
+      
+      System.out.println("\ntoday: sky conditions are " + today.getSkyConditions( )
+             + "\n temperature is " + today.getTemperature( ));
+             
+      today.setTemperature(-9000);
+      
+      System.out.println("\ntoday: sky conditions are " + today.getSkyConditions( )
+             + "\n temperature is " + today.getTemperature( ));
+  }
+  {
+      Weather today = new Weather("sunny", 83);
+      
+      double celsius = today.convertFahrenheitToCelsius( );
+      System.out.println("Temperature in Celsius is "
+                          + celsius);
+  }
+  {
+      Weather yesterday = new Weather("sunny", 79);
+      System.out.println(yesterday.toString());
+      
+      Weather tomorrow = new Weather("rainy", 33);
+      System.out.println( );
+      System.out.println(tomorrow);
+      
+      if (tomorrow.equals(yesterday))
+        System.out.println("\nyesterday and tomorrow are equal");
+      else
+        System.out.println("\nyesterday and tomorrow are not equal");   
+  }
+}
