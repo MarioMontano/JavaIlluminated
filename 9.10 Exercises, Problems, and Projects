@@ -1,0 +1,222 @@
+1. What is/are the valid way(s) to declare a two-dimensional integer array named a? (Check all that apply.) 
+int [ ][ ] a; int a [ ][ ] ; array [ ] int a; int array [ ] a;
+
+3.   In a two-dimensional array, every row must have the same number of columns.
+true false
+
+5.   How do you access the element of array a located at row 2 and column 4? 
+a { 2 }{ 4 } a ( 2,4 ) a [ 2 ][ 4 ] a [ 4 ][ 2 ]
+
+7.  How do you retrieve the number of columns in row 2 in a two-dimensional array a? 
+a.length a[ 2 ].length a.size a[ 2 ].size
+
+15.   What is the value of the expression cities[2][1]?
+“Munich”
+
+17.   What are the row and column indexes of Chicago in the array cities?
+row index is 1, column index is 4
+
+33.   This code prints the element at row index 1 and column index 2 of the two-dimensional array geo.
+System.out.println(“The element in row 1 and column 2 is “
+      + geo[1][2]);
+
+51.   Where is the error in this code sequence?
+Will compile without errors, but will generate an ArrayIndexOutOfBoundsException at run time. By default, this exception halts execution of the program.
+There are only two columns in the array so a[1][2] should not be used. [2] corresponds to the third column. 
+
+53.   Where is the error in this code sequence?
+In arrays with elements of primitive types, each element of the array contains a value of that type.
+10.1 and 10.2 are not members of the type int.
+
+59.   You coded the following on line 14 of the Test.java class: 
+
+When you compile, you get the following message:
+
+Explain what the problem is and how to fix it.
+Remove the 2. The number of sublists separated by commas in the list determines the number of rows in the array.
+
+
+19.   What is the output of this code sequence?
+Munich
+Stuttgart
+Berlin
+Bonn
+
+21.   What is the output of this code sequence?
+New York 	LA	San Francisco	Chicago
+Munich	Stuttgart	Berlin	Bonn
+Paris	Ajaccio	Lyon
+Montreal	Ottawa	Vancouver
+
+ 
+23.   What is the output of this code sequence?
+count is 2
+
+25.   What does this method do?
+j < arrayName[i].length
+continues execution of the inner loop as long as the column index is less than the length of the current row (row i). Given that each row can have a different number of columns, this will ensure that we do not attempt to access an element beyond the last column index of the current row.
+In this case the inner loop contains b++; and b was started at 0 so what is returned is the amount of doubles through all rows and columns.
+
+27. What does this method do?
+Returns the amount of rows.
+
+35.   This code prints all the states (i.e., the first row) that start with an M in the array geo.
+for ( int j = 0; j < geo[0].length; j++ )
+{
+	if( geo[0][j].indexOf( ‘M’ ) == 0 )
+		System.out.print( geo[0][j];
+}
+ 
+37.  This code prints all the elements of the array geo.
+for ( int i = 0; i < geo.length; i++ )
+{
+	System.out.print( “\nrow “ + i + “:\t” );
+	for ( int j = 0; j < geo[i].length; j++ )
+	{
+		System.out.print( geo[i][j] + “\t” );
+	}
+}
+System.out.println( );
+}
+
+ 
+39.   This code counts and prints the number of times the value 8 appears in the array a.
+int count = 0;
+for ( int i = 0; i < a.length; i++ )
+{
+	for ( int j = 0; j < a[i].length; j++ )
+	{
+		if ( a[i[[j] == 8 )
+		{
+			count++;
+		}
+	}
+}
+System.out.println( “# of 8s in a: “ + count );
+
+41.  This code calculates the sum of the elements in the second column (i.e, the column with index 1) of array a.
+int j = 0;
+int sum = 0;  
+for ( int i = 0; i < a.length; i++ )
+{   
+        sum += a[i][1];
+}
+System.out.println( "sum is " + sum );
+
+43.   This method returns the product of all the elements in an array.
+public static int foo( int [ ][ ] a )
+{
+	for ( int i = 0; i < a.length; i++ )
+	{
+		for ( int j = 0; j < a[i].length; j++ )
+		{
+			product *= a[i][j];
+		}
+	}
+	return product
+} 
+
+45.   This method takes an array of ints as a parameter and returns a single-dimensional array of booleans. The length of the array returned should be equal to the number of rows in the two-dimensional array parameter. The element at index i of the returned array will be true if there is a 0 in the corresponding row of the parameter array; otherwise, it will be false. Assume that every row in a has the same number of columns.
+public static boolean [ ] foo( int [ ][ ] a )
+{
+int i = 0;
+int size = 0;
+boolean [ ] awesome;
+size = a.length;
+awesome = new boolean [size];
+	
+for ( int j = 0; j < a[i].length; j++ )
+{
+	if( a[i][j] == 0 )
+		awesome[i] = true;
+}
+return awesome;
+}
+}
+
+61.   You coded the following in the Test.java class in order to output the smallest element in the array a:
+int [ ][ ] a = { { 9, 8, 7, 6 } };
+int min = a[0][0];
+for ( int i = 1; i < a.length; i++ )
+{
+	for ( int j = 0; j < a[i].length; j++ )
+	{
+		if ( a[i][j] < min )
+			min = a[i][j];
+	}
+}
+System.out.println( “The minimum is “ + min );
+
+The code compiles properly, but when you run, you get the following output: 
+
+The minimum is 9
+
+You expected the value of min to be 6. Explain what the problem is and how to fix it.
+ 
+9.   An ArrayList can be returned by a method. true false
+ 
+11.   As we add objects to an ArrayList, how can we be sure it has enough capacity? 
+Use the setCapacity method. Use the trimToSize method. We don’t need to do anything; capacity expands automatically as needed.
+
+13.   To what package does the class ArrayList belong?
+java.io java.util java.array java.list
+
+29.   What does this method do?
+public static int foo( ArrayList<Integer> a )
+{
+	int b = 0;
+	for ( Integer i : a )
+	{
+		b++;
+	}
+	return b;
+}
+
+The enhanced for loop enables looping through the ArrayList objects automatically. So this returns the number of integers in the ArrayList.
+ 
+31.  After the following code sequence is executed, what are the contents and index of each element of a?
+ArrayList<Integer>  a = new ArrayList<Integer>( );
+a.add( 7 );
+a.add( 4 );
+a.add( 21 );
+a.set( 1, 45 );
+(0,7), (1,45), (2,21)
+
+47.   This code retrieves the String “HTML” from languages (without deleting it) and assigns it to the String variable webLanguage.
+webLanguage = languages.get( 2 );
+ 
+49.   This code prints all the elements of languages that start with the letter P.
+for ( String s : languages )
+{
+	if ( s.indexOf(‘P’) == 0 )
+		System.out.print(s);
+}
+
+55.  Where is the error in this code sequence?
+ArrayList<double>  a1;
+If you try to declare an ArrayList object reference using a primitive data type instead of a class type, we get a compiler error.
+
+57.   Where is the error in this code sequence? (The compiler may ask you to recompile.)
+ArrayList<Double> a;
+a = new ArrayList<Float>( );
+Class type inside < > is the class type of the objects that will be stored in the ArrayList and a has been declared previously as an ArrayList reference for that class.
+ 
+63.   You coded the following in the Test.java class:
+public static void main( String [ ] args )
+{
+	// cars is an ArrayList of Auto objects
+	// cars has already been declared and instantiated
+	for ( Auto a ; cars )	// line 12
+
+	{
+		System.out.println( a.toString( ) );
+	}	// line 15
+}		// line 16
+When you compile, you get the following message: 
+Test.java:12: error: ‘;’ expected
+	for ( Auto a ; cars ) // line 12
+	                           ^
+1 error
+Explain what the problems are and how to fix them.
+The problem is that : must be used instead of ;
+A variable of the class type of the objects stored in the ArrayList is declared in the enhanced for loop header, followed by a colon and name of the ArrayList when using an enhanced for loop.
