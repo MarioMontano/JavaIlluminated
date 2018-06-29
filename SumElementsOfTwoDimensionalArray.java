@@ -5,7 +5,7 @@
  * Mario Montano
  * 
  */
-public class SumElementsOfTwoDimesnsionalArray
+public class SumElementsOfTwoDimensionalArray
 {
     float [ ][ ] floatsList = { { 0, 5, 10 },
                                 { 0, 3, 6, 9 } };
