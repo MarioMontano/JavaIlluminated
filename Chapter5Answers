@@ -1,0 +1,39 @@
+1. true, true, false, false, true, true, true
+3. yes
+5. no because it could be that only a is true or only b is true
+7. no, yes, yes, no
+11. The output of this code sequence is false. Apparently the compiler has yet to master the ways of quantum mechanics. A boolean is both true and false with a qubit harnessing superposition. One day the output will be true.
+31. b1 is being assigned what is right of the =. To check for equality one must use two equals, i.e., ==.
+13.
+27 is divisible by 3
+End of sequence
+21.
+public class string 
+{
+  public static void main(String [] args) 
+  {
+  boolean a = true; 
+  int b = 2;
+  if (a)
+    b += 2;
+  else
+    b -= 1;
+  }
+}
+23. initial stuff omitted from here onward, assume a is boolean and b, c are int’s if (b == c)
+a = true;
+25.
+if (b % c == 0)
+ 
+a = true; else
+a = false;
+27.
+if (b * c >= 100) a = !a;
+else
+a = true;
+29.
+if (b < 10 && c < 10) a = true;
+else
+a = false;
+33. We do not need a ; after the parentheses following the if statement. If we place a semicolon after the condition, the compiler will not generate an error. Instead, it will consider the semicolon to indicate that the if statement is empty, because a semicolon by itself indicates a statement that does nothing.
+35. The condition for the if statement should not be encapsulated in curly brackets. They should be parentheses.
