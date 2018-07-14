@@ -12,17 +12,18 @@ public class SumIntegersOfArrayList
     public static void main (String args [])
     {
         ArrayList<Integer> list = new ArrayList<Integer>( );
-        list.add( new Integer( 34 ) );
-        list.add( new Integer( 89 ) );
+        list.add( 34 );
+        list.add( 89 );
         list.add( 65 );
+        System.out.print( listSum( list ) );
     }
-    public int listSum(ArrayList<Integer> pList)
+    public static int listSum(ArrayList<Integer> list)
     {
         int intsum = 0;
      
-        for( int i = 0; i < pList.size(); i++ )
+        for( int i = 0; i < list.size( ); i++ )
         {
-            intsum += pList.get(i);
+            intsum += list.get( i );
         }
         return intsum;
     }   
