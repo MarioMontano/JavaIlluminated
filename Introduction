@@ -1,0 +1,43 @@
+Introduction 
+
+Computer applications touch almost every aspect of our lives. They run automated teller machines, the grocery 
+store’s checkout register, the appointment calendar at your doctor’s office, airport kiosks for flight check-in, a 
+restaurant’s meal-ordering system, and online auctions, just to name a few applications. On your personal computer, 
+you may run a word processor, virus detection software, a spreadsheet, computer games, and an image processing system.
+
+Someone, usually a team of programmers, wrote those applications. If you’re reading this text, you’re probably curious about 
+what’s involved in writing applications, and you would like to write a few yourself. Perhaps you have an idea for the world’s 
+next great application or computer game.
+
+In this text, we’ll cover the basics of writing applications. Specifically, we’ll use 
+the Java programming language. Keep in mind, however, that becoming a good programmer requires more than mastering the rules, 
+or syntax, of a programming language. You also must master basic programming techniques. These are established methods for 
+performing common programming operations, such as calculating a total, finding an average, or arranging a group of items in 
+order.
+
+You also must master good software engineering principles so that you design code that is readable, easily maintained, 
+and reusable. By readable, we mean that someone else should be able to read your program and figure out what it does and how 
+it does it. Writing readable code is especially important for programmers who want to advance in their careers, because it 
+allows someone else to take over the maintenance of your program while you move on to bigger and better responsibilities. Ease 
+of maintenance is also an important aspect of programming, because the specifications for any program are continually changing.
+How many programs can you name that have had only one version? Not many. Well-designed code allows you and others to 
+incorporate prewritten and pretested modules into your program, thus reducing the time to develop a program and yielding code 
+that is more robust and has fewer bugs. One useful feature of the Java programming language is the large supply of prewritten 
+code that you are free to use in your programs.
+
+Programming is an exciting activity. It’s very satisfying to decompose a complex task into computer instructions and watch your
+program come alive. It can be frustrating, however, when your program either doesn’t run at all or produces the wrong output. 
+
+Writing correct programs is critical. Someone’s life or life savings may depend on the correctness of your program. Reusing 
+code helps in developing correct programs, but you must also master effective testing techniques to verify that the output of 
+your program is correct. 
+
+In this text, we’ll concentrate not only on the syntax of the Java language, but also on basic 
+programming techniques, good software engineering principles, and effective testing techniques. Before you can write programs, 
+however, it’s important to understand the platform on which your program will run. A platform refers to the computer hardware 
+and the operating system. Your program will use the hardware for inputting data, for performing calculations, and for 
+outputting results. The operating system will start your program running and will provide your program with essential 
+resources, such as memory, and services, such as reading and writing files.
+
+ 
+ 
