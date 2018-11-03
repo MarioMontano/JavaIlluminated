@@ -1,2 +1,2 @@
 # JavaIlluminated
-Solutions to Java Illuminated
+My Solutions to Java Illuminated
